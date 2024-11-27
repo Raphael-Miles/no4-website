@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bikes4U</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .hero h1 {
+            margin: 0;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+            background: white;
+        }
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .product-card h3 {
+            margin: 10px 0;
+        }
+        .product-card p {
+            padding: 0 10px 10px;
+            color: #555;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo"><strong>Bikes4U</strong></div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contacts</a>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <h1>Welcome to Bikes4U</h1>
+        <p>Bike store near Poplar</p>
+    </section>
+
+    <section id="products">
+        <h2 style="text-align: center; margin-top: 20px;">Our Products</h2>
+        <div class="products">
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x200" alt="Bike 1">
+                <h3>Mountain Bike</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x200" alt="Bike 2">
+                <h3>Road Bike</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x200" alt="Bike 3">
+                <h3>Electric Bike</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x200" alt="Bike 4">
+                <h3>Hybrid Bike</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts" class="hero">
+        <h2>Contact Us</h2>
+        <p>Email: support@bikes4u.com | Phone: +123 456 7890</p>
+    </section>
+</body>
+</html>
